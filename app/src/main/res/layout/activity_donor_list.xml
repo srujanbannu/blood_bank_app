@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_donor_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bloodbankapp.DonorList">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        tools:ignore="ScrollViewSize">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:verticalScrollbarPosition="left"
+        android:layout_alignParentStart="true"
+        android:id="@+id/list_donor"
+        tools:ignore="NestedScrolling,RtlHardcoded" />
+
+        <LinearLayout
+            android:id="@+id/linlay"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:background="@color/White"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/na"
+                android:text="name"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:layout_height="wrap_content"
+                tools:ignore="UnusedAttribute">
+            </TextView>
+            <TextView
+                android:id="@+id/ag"
+                android:layout_gravity="center_horizontal"
+                android:text="group"
+                android:layout_marginVertical="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="UnusedAttribute">
+            </TextView>
+            <Button
+                android:id="@+id/request"
+                android:text="SEND REQUEST"
+                android:background="@drawable/home_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </Button>
+            <Button
+                android:id="@+id/c"
+                android:text="CLOSE"
+                android:background="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </Button>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
