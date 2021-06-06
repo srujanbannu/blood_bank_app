@@ -74,6 +74,8 @@ public class MainActivity extends AppCompatActivity implements ConnectionCallbac
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Toast.makeText(this, "Welcome to SRUJAN'S BLOOD BANK", Toast.LENGTH_LONG).show();
+
         database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("donors");
     l = findViewById(R.id.lay);

@@ -117,6 +117,12 @@
         android:id="@+id/developer_fb"
         android:layout_height="0dp"
         android:layout_weight="1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="178dp"
+            android:background="@drawable/bloodbanklogo">
+
+        </ImageView>
 
     </LinearLayout>
 

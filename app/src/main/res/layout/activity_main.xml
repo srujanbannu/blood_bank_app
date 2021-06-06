@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -11,6 +12,7 @@
     tools:context="com.example.bloodbankapp.MainActivity">
 <RelativeLayout
     android:layout_width="match_parent"
+
     android:layout_height="match_parent">
     <Button
         android:text="Need Blood"
@@ -26,6 +28,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
+
+
     <Button
         android:text="Be a Donor"
         android:layout_width="wrap_content"
@@ -37,44 +41,60 @@
         android:id="@+id/btn_donor_profile"
         android:layout_marginTop="18dp"
         android:layout_centerHorizontal="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_above="@+id/siout"
+        android:layout_below="@+id/btn_need_blood"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bloodbanklogo">
+
+
+    </ImageView>
+
+
+
+
     <Button
-        android:text="Informations"
-        android:padding="20dp"
-        android:textSize="20dp"
-        android:layout_alignParentBottom="true"
-        android:textColor="@color/White"
-        android:background="@drawable/home_button"
+        android:id="@+id/btn_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_info"
+        android:layout_alignParentBottom="true"
         android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="87dp"
+        android:background="@drawable/home_button"
+        android:padding="20dp"
+        android:text="Informations"
+        android:textColor="@color/White"
+        android:textSize="20dp" />
+
     <Button
         android:text="Signout"
         android:background="@drawable/home_button"
         android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
         android:layout_above="@+id/btn_info"
-        android:layout_centerHorizontal="true"
         android:textColor="@color/White"
         android:id="@+id/siout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     </Button>
 
-    </RelativeLayout>
+</RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/lay"
-        android:background="#FFFFFF"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="395dp"
+        android:layout_height="715dp"
+        android:background="@drawable/bloodbanklogo">
+
         <com.google.android.gms.common.SignInButton
             android:id="@+id/button"
-            android:layout_centerInParent="true"
-            android:layout_gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        </com.google.android.gms.common.SignInButton>
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"></com.google.android.gms.common.SignInButton>
     </RelativeLayout>
 
 
